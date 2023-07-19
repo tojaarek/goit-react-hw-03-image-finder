@@ -40,7 +40,7 @@ ImageGallery.propTypes = {
     })
   ).isRequired,
   handleLoadMore: PropTypes.func.isRequired,
-  totalHits: PropTypes.number.isRequired,
+  totalHits: PropTypes.string.isRequired,
   onOpen: PropTypes.func.isRequired,
 };
 

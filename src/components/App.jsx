@@ -11,7 +11,7 @@ export class App extends Component {
     searchInput: '',
     isLoading: false,
     page: 1,
-    totalHits: '',
+    totalHits: 0,
     isModalOpen: false,
     selectedImageId: null,
   };
