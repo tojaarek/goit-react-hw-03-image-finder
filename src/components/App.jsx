@@ -69,16 +69,15 @@ export class App extends Component {
     return (
       <div>
         <SearchBar searchValue={this.handleSearch} />
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <ImageGallery
-            totalHits={totalHits}
-            images={images}
-            handleLoadMore={this.handleLoadMore}
-            onOpen={this.handleOpenModal}
-          />
-        )}
+        {isLoading && <Loader />}
+
+        <ImageGallery
+          totalHits={totalHits}
+          images={images}
+          handleLoadMore={this.handleLoadMore}
+          onOpen={this.handleOpenModal}
+        />
+
         {isModalOpen && (
           <Modal
             onClose={this.handleCloseModal}
